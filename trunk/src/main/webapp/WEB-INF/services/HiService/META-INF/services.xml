@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<serviceGroup>
+    <service name="HiService">
+        <description>Tzolkin WebService</description>
+        <parameter name="ServiceObjectSupplier" locked="false">org.apache.axis2.extensions.spring.receivers.SpringServletContextObjectSupplier</parameter>
+        <parameter name="SpringBeanName" locked="false">HiService</parameter>        
+        <operation name="hi">
+            <messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+        </operation>
+    </service>
+</serviceGroup>
