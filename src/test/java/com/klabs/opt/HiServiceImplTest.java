@@ -11,7 +11,6 @@ public class HiServiceImplTest {
 	public void testHi() {
 
 		ClassPathXmlApplicationContext appContext = new ClassPathXmlApplicationContext("tzolkin-config.xml");
-
 		HiService hiService = (HiService) appContext.getBean("HiService");
 		String prefix = "¡Hola ";
 		String suffix = "!, ¿como va todo? atte. Karim";
